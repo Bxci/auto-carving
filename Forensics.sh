@@ -3,6 +3,8 @@ HOME=$(pwd)
 start_time=$(date '+%d-%m-%Y %H:%M:%S')
 
 #if to check if the script running with root, or with sudo, if not get exiting.
+#take some help from AI, and some from stuckoverflow..
+
 if [[ "$USER" != "root" ]]; then
     echo "Error: script not running as root or with sudo! Exiting..."
     exit 1
